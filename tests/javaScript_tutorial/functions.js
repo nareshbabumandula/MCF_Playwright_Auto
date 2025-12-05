@@ -28,3 +28,15 @@ arrowGreeting();
 const FunctionConstructorGreeting = new Function('name', 'console.log(`Function Constructor Hello, ${name}!`);');
 FunctionConstructorGreeting('srinivas');
 
+
+function add(a,b) {
+    return a + b;
+}
+
+console.log(add(5, 3)); // Output: 8
+
+function multiply(a, b) {
+    return a*b;
+}
+
+console.log(multiply(4, 2)); // Output: undefined due to automatic semicolon insertion
