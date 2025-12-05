@@ -40,3 +40,9 @@ function multiply(a, b) {
 }
 
 console.log(multiply(4, 2)); // Output: undefined due to automatic semicolon insertion
+
+function subtraction(a, b) {
+    return a - b; // This line is unreachable due to automatic semicolon insertion
+}
+console.log(subtraction(10, 4)); // Output: undefined
+
