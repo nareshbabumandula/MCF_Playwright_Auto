@@ -13,7 +13,9 @@ console.log(text.startsWith("Hello")); // Output: true
 console.log(text.endsWith("!")); // Output: true
 console.log(text.includes("World")); // Output: true
 console.log(text.includes("JavaScript")); // Output: false
-console.log(text.trim()); // Output: "Hello, World!" (no leading or trailing spaces)
+let sText  = "   Hello, World!   ";
+console.log(sText);
+console.log(sText.trim()); // Output: "Hello, World!" (no leading or trailing spaces)
 console.log(text.trimStart()); // Output: "Hello, World!" (no leading spaces)
 console.log(text.trimEnd()); // Output: "Hello, World!" (no trailing spaces)
 console.log(text.charAt(0)); // Output: "H"
@@ -24,5 +26,5 @@ console.log(text.match(/World/)); // Output: ["World", index: 7,
 console.log(text.match(/JavaScript/)); // Output: null (not found)
 console.log(text.search(/World/)); // Output: 7 (index of "World")
 console.log(text.search(/JavaScript/)); // Output: -1 (not found)
-console.log(substr(text, 0, 5)); // Output: "Hello" (substring from index 0 to 5)
-console.log(text.concat(" ").concat(" welcome to JavaScript!")); // Output: "Hello, World! welcome to JavaScript!"
+console.log(text.substring(0, 5)); // Output: "Hello" (substring from index 0 to 5)
+console.log(text.concat(" ").concat(" welcome to JavaScript Tutorial!")); // Output: "Hello, World! welcome to JavaScript!"
