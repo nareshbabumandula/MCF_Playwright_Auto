@@ -22,7 +22,7 @@ test('Login', async ({ page }) => {
 });
 
 
-// Ananymous function to navigate to Sample Forms page
+// Ananymous function to navigaimport te to Sample Forms page
 test('Fill Sample Form', async({ page }) => {
     await page.goto('https://www.mycontactform.com/samples.php');
     await page.locator('//input[@name=\'email_to[]\' and @value=\'0\']').check();
@@ -34,4 +34,6 @@ test('Fill Sample Form', async({ page }) => {
     await page.waitForTimeout(3000);
     await page.getByLabel('Subject:').fill('Test Subject');
     await page.waitForTimeout(2000);
+
+
 });
