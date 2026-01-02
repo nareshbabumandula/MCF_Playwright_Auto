@@ -31,9 +31,11 @@ test('Fill Sample Form', async({ page }) => {
     await page.locator('input[name=\'email_to[]\'][value=\'2\']').check();
 
     await page.locator('input[name="email_to[]"]').nth(0).uncheck();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(1000);
     await page.getByLabel('Subject:').fill('Test Subject');
-    await page.waitForTimeout(2000);
-
-
+    await page.waitForTimeout(1000);
+    await page.getByLabel('E-mail Address:').fill('test@example.com');
+    await page.waitForTimeout(1000);
+    await page.getByLabel('Text Box Field:').fill('Test Textbox');
+    await page.waitForTimeout(1000);
 });
