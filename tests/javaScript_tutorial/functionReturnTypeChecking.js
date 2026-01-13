@@ -1,5 +1,5 @@
-function greet(name) {
-    return `Hello, ${name}!`;
+"use strict";
+function add(a, b) {
+    return a + b;
 }
-
-console.log(greet('Naresh'));
+console.log(add(5, 10)); // Output: 15
