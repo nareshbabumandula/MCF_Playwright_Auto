@@ -6,7 +6,7 @@ class Animal {
     constructor(name: string) {
         this.name = name;
     }
-
+  
     // behavior
     walk() {
         console.log(`${this.name} is walking`);
@@ -22,6 +22,6 @@ class Dog extends Animal {
 }
 
 
-const dog = new Dog('Pillu');
+const dog = new Dog('Tommy');
 dog.walk(); // Output: Pillu is walking
 dog.bark(); // Output: Dog barks
