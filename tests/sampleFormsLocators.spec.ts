@@ -35,8 +35,9 @@ test('Fill Sample Form', async({ page }) => {
     await page.waitForTimeout(1000);
     await page.getByLabel('Drop Down Box:').selectOption({index:3});
     await page.waitForTimeout(1000);
-    await page.getByRole('combobox'), (name: 'Drop Down Box:').selectOption('Second Option');
+    await page.getByRole('combobox',{name:'Drop Down Box:'}).selectOption('Second Option');
     await page.waitForTimeout(1000);
+<<<<<<< HEAD
 <<<<<<< HEAD
     await page.locator('#q3').selectOption('First Option');
     await page.waitForTimeout(1000);
@@ -52,3 +53,14 @@ test('Fill Sample Form', async({ page }) => {
 =======
 });
 >>>>>>> d9e9e3e (updated dropbox)
+=======
+    await page .locator('#q3').selectOption('First Option');
+    await page.waitForTimeout(1000);
+    //css locator
+    await page.locator('select[id="q3"]').selectOption('Second Option');
+    await page.waitForTimeout(1000);
+    //xpath locator
+    await page.locator('//select[@id="q3"]').selectOption('Fourth Option');
+    await page.waitForTimeout(1000); 
+});
+>>>>>>> 0d86496 (added steps to automate  Dropdown field)
