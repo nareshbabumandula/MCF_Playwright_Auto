@@ -12,6 +12,10 @@ class Animal {
         console.log(`${this.name} is walking`);
     }
 
+    run() {
+        console.log(`${this.name} is running`);
+    }
+
 }
 
 class Dog extends Animal {
