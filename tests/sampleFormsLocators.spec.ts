@@ -52,7 +52,7 @@ test('Fill Sample Form', async({ page }) => {
     await page.waitForTimeout(1000);
     // XPath Locator
     await page.locator('//select[@id="q3"]').selectOption('Fourth Option');
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(6000);
 });
 
 
