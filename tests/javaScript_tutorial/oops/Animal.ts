@@ -19,6 +19,11 @@ class Animal {
 }
 
 class Dog extends Animal {
+
+    walk() {
+        console.log(`${this.name} is walking fast`);
+    }
+
     bark() {
         console.log(`${this.name} barks`);
     }
@@ -28,4 +33,5 @@ class Dog extends Animal {
 
 const dog = new Dog('Tommy');
 dog.walk(); // Output: Pillu is walking
+dog.run(); // Output: Pillu is running  
 dog.bark(); // Output: Dog barks
