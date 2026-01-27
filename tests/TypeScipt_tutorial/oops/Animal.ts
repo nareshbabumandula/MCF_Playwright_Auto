@@ -30,7 +30,6 @@ class Dog extends Animal {
 
 }
 
-
 const dog = new Dog('Tommy');
 dog.walk(); // Output: Pillu is walking
 dog.run(); // Output: Pillu is running  
