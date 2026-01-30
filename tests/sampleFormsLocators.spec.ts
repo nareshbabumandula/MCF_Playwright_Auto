@@ -21,7 +21,6 @@ test('Login', async ({ page }) => {
 
 });
 
-
 // Ananymous function to navigaimport te to Sample Forms page
 test('Fill Sample Form', async({ page }) => {
     await page.goto('https://www.mycontactform.com/samples.php');
@@ -52,7 +51,6 @@ test('Fill Sample Form', async({ page }) => {
     await page.waitForTimeout(1000);
     // XPath Locator
     await page.locator('//select[@id="q3"]').selectOption('Fourth Option');
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(4000);
+
 });
-
-
