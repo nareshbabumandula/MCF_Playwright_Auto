@@ -1,5 +1,5 @@
 import {test} from '@playwright/test';
-import { HomePage } from '../tests/pages/HomePage';
+import { HomePage } from './pages/HomePage';
 
 test('get started link using POM', async ({ page }) => {
     const homePage = new HomePage(page);
