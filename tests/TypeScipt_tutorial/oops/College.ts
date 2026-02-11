@@ -36,9 +36,9 @@ class Student extends College {
     }
 }
 
-const student = new Student('CBIT', 'Hyderabad', 'Arun', 101);
-student.getCollegeDetails();
-student.openCollege();
-student.getStudentDetails();
-student.attendClasses();
+const studentInstance = new Student('CBIT', 'Hyderabad', 'Arun', 101);
+studentInstance.getCollegeDetails();
+studentInstance.openCollege();
+studentInstance.getStudentDetails();
+studentInstance.attendClasses();
 
