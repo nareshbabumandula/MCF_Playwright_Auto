@@ -1,11 +1,12 @@
 // 1. var in JavaScript
 function display() {
    var name="Srinivas"; // var - Function scoped and can be redeclared
+   console.log(name);
    var name="Sandeep";
+   console.log(name);
    var name="naresh"
    console.log(name);
 }
-
 display();
 
 // 2. let in JavaScript
