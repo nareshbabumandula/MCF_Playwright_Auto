@@ -1,4 +1,10 @@
 class Animal {
+    speak3() {
+      throw new Error("Method not implemented.");
+    }
+    speak23() {
+      throw new Error("Method not implemented.");
+    }
 
     // characteristic
     name: string
