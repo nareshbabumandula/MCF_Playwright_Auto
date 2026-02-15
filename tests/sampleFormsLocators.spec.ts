@@ -1,7 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-
-    
 test('Login', async ({ page }) => {
     // Navigate to the page
     await page.goto('https://www.mycontactform.com');
@@ -21,6 +19,7 @@ test('Login', async ({ page }) => {
 
 });
 
+    
 // Ananymous function to navigaimport te to Sample Forms page
 test('Fill Sample Form', async({ page }) => {
     await page.goto('https://www.mycontactform.com/samples.php');

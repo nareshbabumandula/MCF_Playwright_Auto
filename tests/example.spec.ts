@@ -16,14 +16,11 @@ test('get started link', async ({ page }) => {
 
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  await page.waitForTimeout(3000);
+
+  // Click the Writing tests link.
+  await page.getByRole('link', { name: 'Writing tests' }).first().click();
+  await page.waitForTimeout(3000);
 });
 
 
-test('My Contact Form', async ({ page }) => {
-  await page.goto('https://www.mycontactform.com/samples.php');
-  await page.waitForTimeout(5000);
-  await page.locator("//input[@type='checkbox' and @value=0]").click();
-  await page.waitForTimeout(2000);
-  await page.locator('input#subject').fill('Test Subject');
-  await page.waitForTimeout(2000);
-});
