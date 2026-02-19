@@ -1,4 +1,4 @@
-abstract class Bike {
+export abstract class Bike {
 
     // concrete method or non abstarct method or method with implemenatiotion/body
     discBrake(): void {
@@ -7,12 +7,20 @@ abstract class Bike {
 
     // abstract method
     abstract run(): void;
+    abstract start(): void;
+    abstract discbrake(): void;
 }
 
 // child class 
 class yamaha extends Bike {
     run (): void {
         console.log("Yamaha bike is running");
+    }
+    start(): void {
+        console.log("Yamaha bike is started");
+    }
+    discbrake(): void {
+        console.log("Yamaha bike has disc brake");
     }
 }
 
