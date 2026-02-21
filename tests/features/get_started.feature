@@ -1,4 +1,4 @@
-@smoke @getStarted
+@smoke @getStarted @getStartedNavigation
 Feature: Playwright Get Started navigation
 
   Scenario: Navigate to installation page using Get Started link
